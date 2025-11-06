@@ -19,6 +19,7 @@ const imgGroup1 = "/assets/share-icon.svg";
 const imgGroup2 = "/assets/explore-icon.svg";
 const imgGroup3 = "/assets/download-icon.svg";
 const imgCeLogo = "/assets/LOGO_CE_EN_RGB_HORIZONTAL_POS.svg";
+const imgSsl = "/assets/sll.jpg";
 
 function LogoHorizontal({ className, size = "large" }) {
   if (size === "small") {
@@ -108,17 +109,20 @@ function Dashboard() {
               </p>
             </div>
             <div className="content-stretch flex flex-col gap-2 items-center relative shrink-0 w-full">
-              <div className="content-center flex flex-wrap gap-[30px] items-center justify-center relative shrink-0 w-full">
-                <div className="h-[65px] relative shrink-0 w-[143px]">
+              <div className="content-center flex flex-wrap gap-8 items-center justify-center relative shrink-0 w-full">
+                <div className="h-[98px] relative shrink-0 w-[215px]">
                   <div className="absolute inset-0 overflow-hidden pointer-events-none">
                     <img alt="Africa CDC" className="absolute h-[145.78%] left-[-9.89%] max-w-none top-[-19.1%] w-[118.45%]" src={imgAfricaCdcLogoEn1} />
                   </div>
                 </div>
-                <div className="h-[49.788px] relative shrink-0 w-[157px]">
-                  <img alt="ASLM" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src={imgAslmLogoFinalFinal211} />
+                <div className="h-[75px] relative shrink-0 flex items-center justify-center">
+                  <img alt="ASLM" className="h-full w-auto object-contain pointer-events-none" src={imgAslmLogoFinalFinal211} />
                 </div>
-                <div className="h-[58px] relative shrink-0 w-[146px] flex items-center justify-center">
-                  <img alt="CE Logo" className="max-w-full max-h-full object-contain" src={imgCeLogo} />
+                <div className="h-[87px] relative shrink-0 flex items-center justify-center">
+                  <img alt="CE Logo" className="h-full w-auto object-contain" src={imgCeLogo} />
+                </div>
+                <div className="h-[87px] relative shrink-0 flex items-center justify-center">
+                  <img alt="SSL Logo" className="h-full w-auto object-contain" src={imgSsl} />
                 </div>
               </div>
             </div>
