@@ -1,0 +1,133 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Header from './Header.jsx';
+import Footer from './Footer.jsx';
+
+// Asset URLs
+const imgGroup37 = "/assets/logo-symbol-small.svg";
+const imgAgari = "/assets/logo-text-small.svg";
+
+function LogoHorizontal({ className, size = "large" }) {
+  if (size === "small") {
+    return (
+      <div className={className} data-name="size=small">
+        <div className="absolute bottom-[0.96%] flex items-center justify-center left-[0.28%] right-[65.19%] top-0">
+          <div className="flex-none h-[31.693px] rotate-[180deg] scale-y-[-100%] w-[24.517px]">
+            <div className="relative size-full">
+              <img alt="" className="block max-w-none size-full" src={imgGroup37} />
+            </div>
+          </div>
+        </div>
+        <div className="absolute bottom-[25.74%] left-[40.38%] right-[0.24%] top-1/4" data-name="AGARI">
+          <img alt="" className="block max-w-none size-full" src={imgAgari} />
+        </div>
+      </div>
+    );
+  }
+  return null;
+}
+
+function GuideOrgOwnerPage() {
+  return (
+    <div className="border border-zinc-200 border-solid relative size-full bg-white min-h-screen">
+      <div className="content-stretch flex flex-col items-start relative size-full">
+        <Header />
+
+        {/* Content Area */}
+        <div className="bg-zinc-50 box-border content-stretch flex flex-col gap-4 items-center px-8 py-12 relative shrink-0 w-full">
+          <div className="content-stretch flex flex-col gap-8 max-w-[800px] relative shrink-0 w-full">
+            {/* Breadcrumb */}
+            <div className="flex items-center gap-2 text-sm">
+              <Link to="/guides" className="text-zinc-600 hover:text-[#348f41] transition-colors">
+                Guides
+              </Link>
+              <svg className="w-4 h-4 text-zinc-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+              <span className="text-zinc-900">As an Organisation Owner, what can I do?</span>
+            </div>
+
+            {/* Main Content */}
+            <div className="bg-white rounded-lg p-8 md:p-12 flex flex-col gap-8">
+              {/* Title */}
+              <h1 className="font-bold text-4xl md:text-5xl text-zinc-950 leading-tight">
+                As an Organisation Owner, what can I do?
+              </h1>
+
+              {/* Intro */}
+              <div className="text-base leading-7 text-zinc-700">
+                <p>
+                  As an Organisation Owner, you have the highest level of permissions and full control over your organisation. This is the most powerful role in the AGARI platform.
+                </p>
+              </div>
+
+              {/* Key Capabilities */}
+              <div className="flex flex-col gap-4">
+                <h2 className="font-bold text-2xl text-zinc-950">
+                  Key Capabilities
+                </h2>
+                <p className="text-base leading-7 text-zinc-700">
+                  Your primary responsibilities and capabilities include:
+                </p>
+              </div>
+
+              {/* Capability: Manage Organisation Settings */}
+              <div className="flex flex-col gap-3">
+                <p className="text-base leading-7 text-zinc-700">
+                  <strong>Manage Organisation Settings:</strong> You can edit your organisation's name, abbreviation, website URL, and "About" description from the main Settings page.
+                </p>
+              </div>
+
+              {/* Capability: Full Member Management */}
+              <div className="flex flex-col gap-3">
+                <p className="text-base leading-7 text-zinc-700">
+                  <strong>Full Member Management:</strong> You can invite, disable, change the roles of, and completely delete any member of your organisation except for yourself.
+                </p>
+              </div>
+
+              {/* Capability: Transfer Ownership */}
+              <div className="flex flex-col gap-3">
+                <p className="text-base leading-7 text-zinc-700">
+                  <strong>Transfer Ownership:</strong> You are the only user who can transfer ownership of the organisation to another member. This is a critical and irreversible action.
+                </p>
+              </div>
+
+              {/* Capability: Create New Projects */}
+              <div className="flex flex-col gap-3">
+                <p className="text-base leading-7 text-zinc-700">
+                  <strong>Create New Projects:</strong> You can create new projects for your organisation to start tracking new pathogens or surveillance initiatives.
+                </p>
+              </div>
+
+              {/* Capability: Complete Project Access */}
+              <div className="flex flex-col gap-3">
+                <p className="text-base leading-7 text-zinc-700">
+                  <strong>Complete Project Access:</strong> You automatically have full "Admin" privileges on every single project within your organisation, including any that are created in the future.
+                </p>
+              </div>
+
+              {/* Capability: View Organisation Activity Log */}
+              <div className="flex flex-col gap-3">
+                <p className="text-base leading-7 text-zinc-700">
+                  <strong>View Organisation Activity Log:</strong> You have access to the complete, high-level activity log for your organisation, tracking major events like project creation and member changes.
+                </p>
+              </div>
+
+              {/* Summary */}
+              <div className="text-base leading-7 text-zinc-700 mt-4">
+                <p>
+                  In essence, the Organisation Owner is the ultimate administrator, responsible for the overall structure, membership, and security of their organisation on the AGARI platform.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <Footer />
+      </div>
+    </div>
+  );
+}
+
+export default GuideOrgOwnerPage;
+
