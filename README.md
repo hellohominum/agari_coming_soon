@@ -55,16 +55,17 @@ Or use any static file server of your choice.
 agari/
 ├── index.html           # Main HTML file with import maps
 ├── src/
-│   ├── App.jsx         # Main React component
-│   ├── main.jsx        # Entry point
-│   └── input.css       # Tailwind CSS input file
-├── public/
-│   └── assets/         # Image assets (logos, icons, graphics)
-│       └── README.md   # Asset documentation
+│   ├── assets/         # Logos, illustrations, and other static media
+│   ├── components/     # Shared UI building blocks (Header, Footer, etc.)
+│   ├── guides/         # Guide content modules rendered on the site
+│   ├── pages/          # Top-level page components (Landing, Guides, Guide)
+│   ├── input.css       # Tailwind CSS source file
+│   └── main.jsx        # Entry point that bootstraps the app
 ├── output.css          # Generated Tailwind CSS (created by build)
 ├── package.json        # Dependencies and scripts
 ├── tailwind.config.js  # Tailwind configuration
 ├── vite.config.js      # Vite configuration
+├── server.py           # Simple development server helper
 └── README.md           # This file
 ```
 
@@ -114,16 +115,14 @@ npm run serve
 
 ## Assets
 
-Image assets are stored in the `public/assets/` folder. Placeholder images have been created. See `public/assets/README.md` for details on what images are needed and how to replace the placeholders with your actual assets.
+Image assets are stored in the `src/assets/` folder and imported directly into the React components so that the bundler can optimize them. Replace the placeholders there with your actual logos, illustrations, and photography as needed.
 
 ## Notes
 
-- Image assets are now served from `/public/assets/` folder (placeholders created - replace with actual images)
-- See `public/assets/README.md` for details on required images
+- Image assets live in `src/assets/` (placeholders created - replace with actual images) and should be imported where needed
 - The site uses Geist font from Google Fonts
 - Vite automatically serves files from the public folder
 
 ## License
 
 All rights reserved © 2025 AGARI
-
