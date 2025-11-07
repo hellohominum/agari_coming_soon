@@ -15,7 +15,7 @@ import imgSsl from '../assets/sll.jpg';
 
 function Landing() {
   return (
-    <div className="border border-zinc-200 border-solid relative size-full bg-white min-h-screen">
+    <div className="border border-zinc-200 border-solid relative size-full bg-background min-h-screen">
       <div className="content-stretch flex flex-col items-start relative size-full">
         <Header />
 
