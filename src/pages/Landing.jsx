@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import Header from '../components/Header.jsx';
+import Footer from '../components/Footer.jsx';
 import FadeIn from '../components/FadeIn.jsx';
 import GeneticsHeroBackground from '../components/GeneticsHeroBackground.jsx';
 import imgGraphicStrip from '../assets/graphic-strip.png';
@@ -123,6 +124,8 @@ function Landing() {
             </div>
           </div>
         </section>
+
+        <Footer />
       </main>
     </div>
   );
