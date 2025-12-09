@@ -6,6 +6,11 @@ export default defineConfig({
   server: {
     port: 8000,
     allowedHosts: ['apaportal.sanbi.ac.za', 'agari.africacdc.org', 'agari.sanbi.ac.za'],
+    hmr: true,
+    watch: {
+      usePolling: true,
+      interval: 100,
+    },
   },
 });
 
