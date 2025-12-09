@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import FadeIn from '../components/FadeIn.jsx';
 import GeneticsHeroBackground from '../components/GeneticsHeroBackground.jsx';
 import imgGraphicStrip from '../assets/graphic-strip.png';
-import imgAfricaCdcLogoEn1 from '../assets/africa-cdc-logo.png';
+import imgAfricaCdcLogoEn1 from '../assets/au_cdc_combo_logo.png';
 import imgAslmLogoFinalFinal211 from '../assets/aslm-logo.png';
 import imgMap from '../assets/map.png';
 import imgGroup from '../assets/governance-icon.svg';
@@ -15,7 +15,7 @@ import imgSsl from '../assets/sll.jpg';
 import imgRobertKochInstitute from '../assets/robertkochinstitute.jpeg';
 import imgSanbi from '../assets/sanbi.svg';
 import imgIllumina from '../assets/illumina.jpeg';
-import imgBmgf from '../assets/bmgf.jpg';
+import imgBmgf from '../assets/gates_foundation.png';
 import imgAu from '../assets/au.png';
 import imgAdb from '../assets/adb.png';
 import imgWb from '../assets/wb.jpg';
@@ -96,14 +96,14 @@ function Landing() {
                 className="content-center flex flex-wrap gap-12 items-center justify-center relative shrink-0 w-full"
               >
                 {[
-                  { src: imgAfricaCdcLogoEn1, alt: "Africa CDC", className: "h-[98px] w-[215px]", imgClass: "absolute h-[145.78%] left-[-9.89%] max-w-none top-[-19.1%] w-[118.45%]" },
+                  { src: imgAfricaCdcLogoEn1, alt: "Africa CDC", className: "h-[60px] sm:h-[75px] md:h-[98px]", imgClass: "h-full w-auto object-contain" },
                   { src: imgAslmLogoFinalFinal211, alt: "ASLM", className: "h-[75px]", imgClass: "h-full w-auto object-contain pointer-events-none" },
                   { src: imgCeLogo, alt: "CE Logo", className: "h-[87px]", imgClass: "h-full w-auto object-contain" },
                   { src: imgSsl, alt: "SSL Logo", className: "h-[87px]", imgClass: "h-full w-auto object-contain" },
                   { src: imgRobertKochInstitute, alt: "Robert Koch Institute", className: "h-[87px]", imgClass: "h-full w-auto object-contain" },
                   { src: imgSanbi, alt: "SANBI", className: "h-[87px]", imgClass: "h-full w-auto object-contain" },
                   { src: imgIllumina, alt: "Illumina", className: "h-[43.5px]", imgClass: "h-full w-auto object-contain" },
-                  { src: imgBmgf, alt: "BMGF", className: "h-[87px]", imgClass: "h-full w-auto object-contain" },
+                  { src: imgBmgf, alt: "BMGF", className: "h-[61px]", imgClass: "h-full w-auto object-contain" },
                   { src: imgAu, alt: "AU", className: "h-[70px]", imgClass: "h-full w-auto object-contain" },
                   { src: imgAdb, alt: "ADB", className: "h-[95px]", imgClass: "h-full w-auto object-contain" },
                   { src: imgWb, alt: "WB", className: "h-[87px]", imgClass: "h-full w-auto object-contain" },
